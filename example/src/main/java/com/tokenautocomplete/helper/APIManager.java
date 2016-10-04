@@ -19,9 +19,7 @@ import cz.msebera.android.httpclient.Header;
  */
 public class APIManager {
 
-//    public static String urlKata ="http://softwareqta.com/service-center/api/";
     public static String urlKata ="http://center.kataindonesia.co.id/api/";
-    public static String urlLoginEPayment = "https://spektrumdevel.ddns.net:14554/";
     public static AsyncHttpClient client = new AsyncHttpClient();
     public Context context;
 
