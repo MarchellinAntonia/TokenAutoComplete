@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_width="match_parent">-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_text"
+            android:text=" Pilih Penjual"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:textColor="@color/dark_grey"
+                android:nextFocusDown="@+id/editText"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_rounded"
+                android:inputType="text|textNoSuggestions|textMultiLine"
+                android:focusableInTouchMode="true" />
+            <AutoCompleteTextView
+                android:id="@+id/namaFrontliner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"
+                android:hint="Nama Frontliner">
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <AutoCompleteTextView
+                android:id="@+id/namaPromotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"
+                android:hint="Nama Promotor">
+                <requestFocus />
+            </AutoCompleteTextView>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nama Pelanggan"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_rounded"
+            android:id="@+id/namaPelanggan"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hp_text"
+            android:id="@+id/handphone"
+            android:inputType="phone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_text"
+            android:layout_marginTop="12dp"
+            android:text=" Ingin Menjadi Reseller?"/>
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group">
+            <RadioButton android:id="@+id/radio_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_yes"
+                android:checked="true"/>
+            <RadioButton android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_no"/>
+        </RadioGroup>
+
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/harga_jual"-->
+            <!--android:id="@+id/harga_jual"-->
+            <!--android:background="@drawable/bg_rounded"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:inputType="number"/>-->
+
+        <AutoCompleteTextView
+            android:id="@+id/harga_jual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/bg_rounded"
+            android:layout_marginTop="12dp"
+            android:hint="Harga Jual">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Upload Faktur"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/service_background_text"-->
+            <!--android:id="@+id/upload_faktur"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="12dp"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:id="@+id/edit_faktur"-->
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_text"
+            android:background="@drawable/bg_rounded"
+            android:layout_marginTop="12dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"/>
+        <!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/toko_text"/>
+        -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/immei_1"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"
+                android:id="@+id/immei1"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="IMMEI 2"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"
+                android:id="@+id/immei2"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_rounded"
+            android:text="@string/register_text"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/register_button"/>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="#e1e1e1"-->
+        <!--android:id="@+id/logout">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerInParent="true">-->
+        <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:text="@string/dont_text_have"-->
+        <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/logout_button"
+            android:textColor="@color/dark_grey" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tokens"
+            android:layout_below="@id/searchView"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <!--</RelativeLayout>-->

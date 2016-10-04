@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#868485</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#868485</color>
+
+    <color name="kata_background_text">#000000</color>
+    <color name="service_background_text">#868485</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="dark_grey">#464646</color>
+    <color name="grey">#979797</color>
+</resources>
